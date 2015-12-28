@@ -10,8 +10,8 @@ from calendar import monthrange
 
 baseurl = 'http://www.feenixcensus.com/?'
 
-year = 2014
-for month in range(12, 13):
+year = 2015
+for month in range(1, 13):
     days = monthrange(year, month)[1]
     while days > 1:
         if days - 7 >= 1:
