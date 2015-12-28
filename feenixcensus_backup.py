@@ -24,6 +24,6 @@ for month in range(1, 13):
             days = 1
         searchQuery = 'start_level=60&start_date=' + str(year) + '-' + str(month) + '-' + str(begin_day) + '&end_date=' + str(year) + '-' + str(month) + '-' + str(end_day) + '&search=Search'
         page = requests.get(baseurl + searchQuery)
-        with open(searchQuery, 'w') as f:
+        with open(searchQuery + '.html', 'w') as f:
             f.write(page.text)
 
